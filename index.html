@@ -33,27 +33,84 @@
 
                 <!-- Sezione Ingredienti -->
                 <section class="ingredients">
-                    <h2>Ingredienti</h2>
+                    <h2>Ingredients</h2>
 
                     <div class="ingredients-container">
 
                         <!-- First Row -->
                         <div class="ingredients-row">
-                            <div class="ingredient"></div>
-                            <div class="ingredient"></div>
+
+                            <!-- Single Ingredient -->
+                            <div class="single-ingredient">
+                                <img src="img/cheese.svg" alt="cheese">
+                                <label for="checkbox-single-ingredient">Cheese</label>
+                                <input class="ingredient-checkbox" type="checkbox" value="3">
+                            </div>
+
+
+                            <!-- Single Ingredient -->
+                            <div class="single-ingredient">
+                                <img src="img/tomato.svg" alt="tomato">
+                                <label for="checkbox-single-ingredient">Tomato</label>
+                                <input class="ingredient-checkbox" type="checkbox" value="1">
+                            </div>
+
                         </div>
 
-                        <!-- First Row -->
+                        <!-- Second Row -->
                         <div class="ingredients-row">
-                            <div class="ingredient"></div>
-                            <div class="ingredient"></div>
+
+                            <!-- Single Ingredient -->
+                            <div class="single-ingredient">
+                                <img src="img/fried-egg.svg" alt="Egg">
+                                <label for="checkbox-single-ingredient">Egg</label>
+                                <input class="ingredient-checkbox" type="checkbox" value="3">
+                            </div>
+
+
+                            <!-- Single Ingredient -->
+                            <div class="single-ingredient">
+                                <img src="img/lettuce.svg" alt="Lattuce">
+                                <label for="checkbox-single-ingredient">Lattuce</label>
+                                <input class="ingredient-checkbox" type="checkbox" value="1">
+                            </div>
+
+                        </div>
+
+                        <!-- Third Row -->
+                        <div class="ingredients-row">
+
+                            <!-- Single Ingredient -->
+                            <div class="single-ingredient">
+                                <img src="img/mustard.svg" alt="Mustard">
+                                <label for="checkbox-single-ingredient">Mustard</label>
+                                <input class="ingredient-checkbox" type="checkbox" value="1">
+                            </div>
+
+
+                            <!-- Single Ingredient -->
+                            <div class="single-ingredient">
+                                <img src="img/ketchup.svg" alt="Ketchup">
+                                <label for="checkbox-single-ingredient">Ketchup</label>
+                                <input class="ingredient-checkbox" type="checkbox" value="1">
+                            </div>
+
                         </div>
                         
+
                     </div>
                 </section>
 
+                <!-- Sezione Coupon  -->
+                <section class="coupon-section">
+                    <label for="coupon-input">Discount coupon</label>
+                    <input id="coupon-input" type="text" placeholder="12345ABCDEF">
+                </section>
+
                 <!-- Bottone Calcola -->
-                <button id="button-price-burger">Calcola</button>
+                <div class="container-button">
+                    <button id="button-price-burger">Calculate</button>
+                </div>
             </div>
         </main>
 

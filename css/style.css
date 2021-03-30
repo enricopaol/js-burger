@@ -39,10 +39,11 @@ main {
     width: 100%;
     height: calc( 100% - 100px - 80px);
     background-color: #fff;
+    overflow: auto;
 }
 
 main .wrapper {
-    padding: 40px 0;
+    padding: 35px 0;
 }
 
 /* Name your Burger Input */
@@ -50,11 +51,85 @@ main .wrapper {
     border-width: 0px;
     background-color: #fff;
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 25px;
 }
 #input-name-burger:focus {
     outline: none;
+}
+
+/* Sezione Ingrediens */
+.ingredients h2 {
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.ingredients-row {
+    display: flex;
+    padding: 5px 0;
+}
+
+.ingredients-row .single-ingredient {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.ingredients-row .single-ingredient img {
+    width: 40px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.ingredients-row .single-ingredient label {
+    margin-right: 5px;
+}
+
+/* Sezione Coupon */
+.coupon-section {
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.coupon-section label {
+    margin-right: 15px;
+}
+
+#coupon-input {
+    padding: 5px;
+    background-color: #fff4e2;
+    border-width: 0;
+    flex-grow: 1;
+    margin-right: 30px;
+    font-weight: 600;
+}
+#coupon-input:focus {
+    outline: none;
+}
+
+/* Button */
+.container-button {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.container-button button {
+    background-color: #fdbc41;
+    color: black;
+    font-weight: 700;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    border-width: 0;
+    cursor: pointer;
+    transition: transform .12s ;
+}
+.container-button button:focus {
+    outline: none;
+}
+.container-button button:hover {
+    transform: scale(1.1);
 }
 
 /* FOOTER */
